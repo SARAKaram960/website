@@ -10,8 +10,6 @@ body {
     font-family: Arial, sans-serif;
     background-color: #000;
     color: #fff;
-    width: 1156px;
-    height: 600px;
 }
 ::-webkit-scrollbar {
     display: none;
