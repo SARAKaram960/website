@@ -10,10 +10,9 @@ body {
     font-family: Arial, sans-serif;
     background-color: #000;
     color: #fff;
-    overflow: hidden; /* إخفاء التمرير الزائد في الصفحة */
 }
 ::-webkit-scrollbar {
-    display: none; /* إخفاء شريط التمرير */
+    display: none;
 }
 
 /* Navbar */
@@ -59,7 +58,6 @@ nav ul li a {
     flex-direction: column;
     text-align: center;
     position: relative;
-    background-size: cover;
 }
 
 .hero-content h1 {
