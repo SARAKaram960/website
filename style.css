@@ -58,6 +58,7 @@ nav ul li a {
     flex-direction: column;
     text-align: center;
     position: relative;
+      background-size: contain;
 }
 
 .hero-content h1 {
