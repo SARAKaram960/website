@@ -11,46 +11,14 @@ body {
     background-color: #000;
     color: #fff;
 }
+
 ::-webkit-scrollbar {
     display: none;
 }
 
-/* Navbar */
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Center the nav links */
-    background-color: #111;
-    padding: 10px 20px;
-    position: relative;
-}
-
-.logo {
-    position: absolute;
-    left: 20px; /* Keep logo to the left */
-}
-
-.logo img {
-    height: 40px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-}
-
-nav ul li a {
-    color: #cdc530;
-    text-decoration: none;
-    font-size: 14px;
-}
-
 /* Hero Section */
 .hero {
-    background: url('Anthea.png') no-repeat center center;
+    background: url('Anthea.png') no-repeat center center/contain;
     height: 70vh;
     display: flex;
     justify-content: center;
@@ -58,7 +26,6 @@ nav ul li a {
     flex-direction: column;
     text-align: center;
     position: relative;
-      background-size: contain;
 }
 
 .hero-content h1 {
@@ -127,7 +94,6 @@ nav ul li a {
     border-radius: 10px;
 }
 
-/* Footer */
 .quick-links {
     background-color: #4CAF50;
     padding: 20px;
@@ -148,26 +114,12 @@ nav ul li a {
 
 /* Responsive */
 @media (max-width: 768px) {
-    .navbar nav ul {
-        flex-direction: column;
-        background-color: #111;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        display: none;
-    }
-
-    .navbar nav ul.show {
-        display: flex;
-    }
-
     .hero {
         height: 60vh;
         padding: 20px;
     }
 
-    .values-row, .values-content {
+    .values-row, .values-content, .quick-links {
         flex-direction: column;
         align-items: center;
     }
