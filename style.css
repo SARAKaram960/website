@@ -18,15 +18,19 @@ body {
 
 /* Hero Section */
 .hero {
-    background: url('Anthea.png') no-repeat center center / contain;
-    background-color: #000; /* لو الصورة فيها شفافية */
-    padding: 40px 0; /* بدل height ثابت */
+    background-image: url('Anthea.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; /* عشان تظهر كاملة بدون قص */
+    
+    aspect-ratio: 2.38; 
+    width: 1000;
+    background-color: #000;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    position: relative;
 }
 
 .hero-content h1 {
@@ -57,10 +61,11 @@ body {
 .values {
     background-color: #900;
     padding: 20px;
-    margin-top: 0;   /* مهم لإلغاء أي فراغ فوق */
 }
 
 .values-row {
+    background-color: #900;
+    padding: 20px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -94,7 +99,6 @@ body {
     border-radius: 10px;
 }
 
-/* Quick Links Section */
 .quick-links {
     background-color: #4CAF50;
     padding: 20px;
@@ -116,14 +120,12 @@ body {
 /* Responsive */
 @media (max-width: 768px) {
     .hero {
-        padding: 30px 20px;
+        height: 60vh;
+        padding: 20px;
     }
 
-    .values-row,
-    .values-content,
-    .quick-links {
+    .values-row, .values-content, .quick-links {
         flex-direction: column;
         align-items: center;
     }
 }
-
