@@ -18,8 +18,9 @@ body {
 
 /* Hero Section */
 .hero {
-    background: url('Anthea.png') no-repeat center center/contain;
-    height: 70vh;
+    background: url('Anthea.png') no-repeat center center / contain;
+    background-color: #000; /* لو الصورة فيها شفافية */
+    padding: 40px 0; /* بدل height ثابت */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,11 +57,10 @@ body {
 .values {
     background-color: #900;
     padding: 20px;
+    margin-top: 0;   /* مهم لإلغاء أي فراغ فوق */
 }
 
 .values-row {
-    background-color: #900;
-    padding: 20px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -94,6 +94,7 @@ body {
     border-radius: 10px;
 }
 
+/* Quick Links Section */
 .quick-links {
     background-color: #4CAF50;
     padding: 20px;
@@ -115,12 +116,14 @@ body {
 /* Responsive */
 @media (max-width: 768px) {
     .hero {
-        height: 60vh;
-        padding: 20px;
+        padding: 30px 20px;
     }
 
-    .values-row, .values-content, .quick-links {
+    .values-row,
+    .values-content,
+    .quick-links {
         flex-direction: column;
         align-items: center;
     }
 }
+
